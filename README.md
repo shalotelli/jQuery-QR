@@ -6,10 +6,13 @@ If a link is specified, the URL is used. Text can also be used as a label or as 
 If there is no text or URL, the plugin converts the relative elements content into a QR code.
 
 ##Usage
+###JavaScript
 ```javascript
 $("#qr").qr('This overrides the content', { showLabel: true, size: 100 });
 $(".qr-link").qr();
-
+```
+###HTML
+```html
 <div id="qr">This is the content</div>
 <a href="http://www.responsiveshops.com.com/" class="qr-link">ResponsiveShops</a> 
 ```
